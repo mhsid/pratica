@@ -41,19 +41,19 @@ void loop()
     var_RUI=(analogRead(A0))-0;
     var_CO2=(analogRead(A6))-0;
 
-    u8g2.clearBuffer();
+    
     u8g2.setFont(u8g2_font_9x15_tr);
     u8g2.setCursor(0, 10);
     u8g2.print(String("TEMP = ")+String((var_TEMP)));
     u8g2.sendBuffer();
 
-    u8g2.clearBuffer();
+    
     u8g2.setFont(u8g2_font_9x15_tr);
     u8g2.setCursor(0, 23);
     u8g2.print(String("UM =")+String((var_UM)));
     u8g2.sendBuffer();
 
-    u8g2.clearBuffer();
+    
     u8g2.setFont(u8g2_font_9x15_tr);
     u8g2.setCursor(0, 38);
     u8g2.print(String("LUM =")+String((var_LUM)));
@@ -62,19 +62,19 @@ void loop()
     u8g2.clearBuffer();
     u8g2.sendBuffer();
 
-    u8g2.clearBuffer();
+    
     u8g2.setFont(u8g2_font_9x15_tr);
     u8g2.setCursor(0, 38);
     u8g2.print("...");
     u8g2.sendBuffer();
 
-    u8g2.clearBuffer();
+    
     u8g2.setFont(u8g2_font_9x15_tr);
     u8g2.setCursor(0, 50);
     u8g2.print(String("RUI =")+String((var_RUI)));
     u8g2.sendBuffer();
 
-    u8g2.clearBuffer();
+    
     u8g2.setFont(u8g2_font_9x15_tr);
     u8g2.setCursor(0, 63);
     u8g2.print(String("CO2 =")+String((var_CO2)));
