@@ -62,7 +62,7 @@ void loop()
     u8g2.clearBuffer();
     u8g2.sendBuffer();
 
-    
+    u8g2.clearBuffer();
     u8g2.setFont(u8g2_font_9x15_tr);
     u8g2.setCursor(0, 38);
     u8g2.print("...");
